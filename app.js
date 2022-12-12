@@ -193,7 +193,8 @@ function anyColor(a){
     }
     return `hsla(${Math.random()*360}, 50%, 50%, ${alpha})`
 }
-animate(){
+
+function animate(){
     requestAnimationFrame(animate)
     paint()
     AmmoArr.forEach((ammo, i)=>{
