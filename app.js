@@ -193,12 +193,7 @@ function anyColor(a){
     }
     return `hsla(${Math.random()*360}, 50%, 50%, ${alpha})`
 }
-setInterval(() => {
-    allEnemies.forEach((e)=>{
-        player.shoot(e.position.x, e.position.y)
-    })
-}, 500);
-function animate(){
+animate(){
     requestAnimationFrame(animate)
     paint()
     AmmoArr.forEach((ammo, i)=>{
